@@ -2,6 +2,8 @@
 
 ## 📍 Sessão Hero
 
+![Home Hero](./home-hero.png)
+
 | ID      | Descrição do Problema                                          | Localização                                          | Sugestão de Melhoria                                                                 | Gravidade | Esforço |
 | :------ | :------------------------------------------------------------- | :--------------------------------------------------- | :----------------------------------------------------------------------------------- | :-------- | :------ |
 | **7.1** | Baixo contraste entre texto branco e imagem clara (FM11, AC4). | Título principal da Hero.                            | Aplicar um _overlay_ escurecido na imagem ou _text-shadow_ no título.                | Alta      | Leve    |
@@ -12,6 +14,10 @@
 
 ## 📍 Roteiros da Comunidade e Lugares Famosos
 
+![Roteiro da Comunidade](./home-roteiro_da_comunidade.png)
+
+<!-- ![Lugares Famosos](./home-lugares_mais_famosos.png) -->
+
 | ID      | Descrição do Problema                                | Localização                                     | Sugestão de Melhoria                                                             | Gravidade | Esforço  |
 | :------ | :--------------------------------------------------- | :---------------------------------------------- | :------------------------------------------------------------------------------- | :-------- | :------- |
 | **8.1** | Falsa interatividade/Falso positivo (CO3, AF1).      | Cards que se movem mas não executam ação.       | Remover animação de _hover_ e cursor 'pointer' enquanto não houver link.         | Alta      | Leve     |
@@ -21,6 +27,8 @@
 
 ## 📍 Banner "Viaje da Melhor Forma" (CTA Final)
 
+![Viaje da Melhor Forma](./home-viaje_da_melhor_forma.png)
+
 | ID      | Descrição do Problema                           | Localização                             | Sugestão de Melhoria                                                    | Gravidade | Esforço |
 | :------ | :---------------------------------------------- | :-------------------------------------- | :---------------------------------------------------------------------- | :-------- | :------ |
 | **9.1** | Botão de conversão inativo (AF1, CO3).          | Botão "Cadastre-se".                    | Vincular à rota de registro ou abrir modal de cadastro.                 | Alta      | Leve    |
@@ -29,15 +37,21 @@
 
 ## 📍 Sessão "O que estão dizendo" e Footer
 
+![Feedback e Footer](./home-o_que_estao_diznedo_e_footer.png)
+
 | ID       | Descrição do Problema                                  | Localização                                      | Sugestão de Melhoria                                                      | Gravidade | Esforço  |
 | :------- | :----------------------------------------------------- | :----------------------------------------------- | :------------------------------------------------------------------------ | :-------- | :------- |
-| **10.1** | Links estáticos em áreas de navegação (AF1, NA5).      | Link "Ver mais" e todos os links do rodapé.      | Implementar redirecionamentos funcionais para as páginas citadas.         | Alta      | Moderado |
+| **10.1** | Links estáticos em áreas de navigation (AF1, NA5).     | Link "Ver mais" e todos os links do rodapé.      | Implementar redirecionamentos funcionais para as páginas citadas.         | Alta      | Moderado |
 | **10.2** | Falha de transparência em seções sensíveis (PS2, CO6). | Textos de "Privacidade" e "Segurança" no rodapé. | Substituir textos genéricos por políticas reais de proteção de dados.     | Alta      | Leve     |
 | **10.3** | Ícones sociais vazios e sem identificação (AC1, FM4).  | Seção "Onde estamos" no Footer.                  | Inserir logotipos das redes e atributos `aria-label` para acessibilidade. | Média     | Leve     |
+
+---
 
 # Documentação de Problemas Encontrados (Metodologia 2.5A)
 
 ## 📍 Etapa 1: Planejamento Inicial
+
+![Etapa 1](./Roteiro_de_viagem_personalizada-etapa_1.png)
 
 | ID      | Descrição do Problema                                          | Localização                                         | Sugestão de Melhoria                                           | Gravidade | Esforço |
 | :------ | :------------------------------------------------------------- | :-------------------------------------------------- | :------------------------------------------------------------- | :-------- | :------ |
@@ -47,6 +61,9 @@
 | **1.4** | Indicador de foco por teclado pouco visível (AC2, AC9).        | Cards e campos de entrada.                          | Implementar um contorno (:focus) visualmente distinto via CSS. | Alta      | Leve    |
 
 ## 📍 Etapa 2: Hospedagens
+
+![Etapa 2](./Roteiro_de_viagem_personalizada-etapa_2.png)
+![Etapa 2 Modal](./Roteiro_de_viagem_personalizada-etapa_2_ao_clicar_em_um_card.png)
 
 | ID      | Descrição do Problema                                                 | Localização                               | Sugestão de Melhoria                                                  | Gravidade | Esforço  |
 | :------ | :-------------------------------------------------------------------- | :---------------------------------------- | :-------------------------------------------------------------------- | :-------- | :------- |
@@ -58,6 +75,8 @@
 
 ## 📍 Etapa 3: Lazer e Passeios
 
+![Etapa 3](./Roteiro_de_viagem_personalizada-etapa_3.png)
+
 | ID      | Descrição do Problema                                         | Localização                                | Sugestão de Melhoria                                    | Gravidade | Esforço  |
 | :------ | :------------------------------------------------------------ | :----------------------------------------- | :------------------------------------------------------ | :-------- | :------- |
 | **3.1** | Instrução de tarefa ambígua (CO3, NA1).                       | Texto "Selecione como deseja se divertir". | Especificar se a seleção é única ou múltipla.           | Média     | Leve     |
@@ -67,7 +86,7 @@
 
 ## 📍 Etapas 4 e 5: Gastronomia e Transporte
 
-_Nota: Estas etapas apresentam padrões de interface idênticos às etapas 2 e 3, replicando os seguintes problemas:_
+_Nota: Estas etapas apresentam padrões de interface idênticos às etapas 2 e 3, replicando os seguintes problemas (Imagens omitidas por redundância visual)._
 
 | ID      | Descrição do Problema                          | Localização                                                 | Sugestão de Melhoria                                                               | Gravidade | Esforço  |
 | :------ | :--------------------------------------------- | :---------------------------------------------------------- | :--------------------------------------------------------------------------------- | :-------- | :------- |
@@ -77,6 +96,9 @@ _Nota: Estas etapas apresentam padrões de interface idênticos às etapas 2 e 3
 | **4.4** | Falta de botão de avanço explícito (NA5, AF9). | Rodapé das listagens.                                       | Incluir botão "Confirmar Seleção" para evitar dependência exclusiva da _stepper_.  | Alta      | Leve     |
 
 ## 📍 Etapa 6: Salvamento e Encerramento (Final)
+
+![Etapa 6 Concluído](./Roteiro_de_viagem_personalizada-etapa_6_ultima_etapa.png)
+![Etapa 6 Salvar](./Roteiro_de_viagem_personalizada-etapa_6_salvar_roteiro.png)
 
 | ID      | Descrição do Problema                             | Localização                            | Sugestão de Melhoria                                                    | Gravidade | Esforço |
 | :------ | :------------------------------------------------ | :------------------------------------- | :---------------------------------------------------------------------- | :-------- | :------ |
